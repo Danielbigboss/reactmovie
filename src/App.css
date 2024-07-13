@@ -1,0 +1,35 @@
+
+.container-my{
+  max-width: 800px  ;
+  width: 95%;
+}
+.border-b-my{
+  border-bottom: 1px solid rgb(43, 42, 42);
+}
+.my-h{
+  height: calc(97vh - 8rem);
+  overflow: hidden;
+  overflow-y: auto;
+}
+.scroll-my::-webkit-scrollbar{
+  width: 4px;
+  
+}
+.scroll-my::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: #1e40af;
+  border-radius: 2px;
+}
+.movie-count{
+  /* top: -5px; */
+  font-size: 10px;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .my-input{
+    position: fixed;
+    width: 100%;
+    top: 4.8rem;
+  }
+}
