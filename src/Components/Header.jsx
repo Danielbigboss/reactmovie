@@ -7,7 +7,7 @@ const Header = ({ userInput, handleSearch, darkMode, setDarkMode }) => {
       <header className="fixed w-full right-0 top-0">
         <nav className="bg-blue-800 p-3 m-5 flex items-center justify-between rounded-xl shadow">
           <div className="logo text-xs md:text-2xl font-bold text-white">WatchME🍿</div>
-          <div className="w-8/12 md:w-80">
+          <div className="w-7/12 md:w-80">
             <input type="text"
               className={`w-full text-base lg:text-sm shadow outline-none p-2 md:p-2 rounded-lg ${darkMode ? 'bg-blue-600 text-white placeholder:text-white' : 'bg-white text-black'}`}
               value={userInput}
@@ -24,6 +24,8 @@ const Header = ({ userInput, handleSearch, darkMode, setDarkMode }) => {
           </div>
         </nav>
       </header>
+
+
 
     </>
   )
