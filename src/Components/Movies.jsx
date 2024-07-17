@@ -17,6 +17,7 @@ const Movies = ({ movieData, isLoading, movieNotFoundError, selectedId, setSelec
 
 
 
+
     const isWatched = watchedMovie.map((movie) => movie.imdbID).includes(selectedId);
     const handleSelected = (id) => {
 
@@ -28,7 +29,6 @@ const Movies = ({ movieData, isLoading, movieNotFoundError, selectedId, setSelec
             const data = await res.json();
             setLoadingEffect(false)
             setMovie({ ...data, userRating: 0 })
-            console.log(movie)
             document.title = `Movie | ${data.Title}`
         }
 

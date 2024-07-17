@@ -9,7 +9,7 @@ const Header = ({ userInput, handleSearch, darkMode, setDarkMode }) => {
           <div className="logo text-xs md:text-2xl font-bold text-white">WatchME🍿</div>
           <div className="w-8/12 md:w-80">
             <input type="text"
-              className={`w-full text-xs md:text-sm shadow outline-none p-2 md:p-2 rounded-lg ${darkMode ? 'bg-blue-600 text-white placeholder:text-white' : 'bg-white text-black'}`}
+              className={`w-full text-base lg:text-sm shadow outline-none p-2 md:p-2 rounded-lg ${darkMode ? 'bg-blue-600 text-white placeholder:text-white' : 'bg-white text-black'}`}
               value={userInput}
               onChange={handleSearch}
               placeholder="Search movie..."
@@ -24,8 +24,6 @@ const Header = ({ userInput, handleSearch, darkMode, setDarkMode }) => {
           </div>
         </nav>
       </header>
-
-
 
     </>
   )
