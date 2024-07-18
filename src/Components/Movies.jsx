@@ -47,8 +47,9 @@ const Movies = ({ movieData, isLoading, movieNotFoundError, selectedId, setSelec
 
 
     const handleDeleteWatchedMovie = (id) => {
-
-        setWatchedMovie(watchedMovie.filter((item) => item.imdbID !== id));
+const filtered = watchedMovie.filter((item) => item.imdbID !== id)
+        setWatchedMovie(filtered);
+        localStorage.setItem('watchedMovie', JSON.stringify(filtered))
         
         // localStorage.clear('watchedMovie')
 
