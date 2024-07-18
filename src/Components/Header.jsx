@@ -14,7 +14,7 @@ const Header = ({ userInput, handleSearch, darkMode, setDarkMode }) => {
               onChange={handleSearch}
               placeholder="Search movie..."
             />
-          </div>
+          </div>z
 
           <div className="flex items-center gap-2">
             <div className="text-xs text-white font-bold hidden md:block">Dark mode</div>
